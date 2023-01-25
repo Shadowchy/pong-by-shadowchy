@@ -70,7 +70,7 @@ def ball_restart():
         number_two = game_font.render('2',False,light_grey)
         screen.blit(number_two,(screen_width/2 - 10, screen_height/2 + 20))
     if 1400 < current_time - score_time < 2100:
-        number_one = game_font.render('1',False,light_grey)
+        number_one = game_font.render(' 1',False,light_grey)
         screen.blit(number_one,(screen_width/2 - 10, screen_height/2 + 20))
     
     if current_time - score_time < 2100:
