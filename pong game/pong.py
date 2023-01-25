@@ -64,13 +64,13 @@ def ball_restart():
     ball.center = (screen_width/2, screen_height/2)
 
     if current_time - score_time < 700:
-        number_three = game_font.render(' 3',False,light_grey)
+        number_three = game_font.render('3',False,light_grey)
         screen.blit(number_three,(screen_width/2 - 10, screen_height/2 + 20))
     if 700 < current_time - score_time < 1400:
-        number_two = game_font.render(' 2',False,light_grey)
+        number_two = game_font.render('2',False,light_grey)
         screen.blit(number_two,(screen_width/2 - 10, screen_height/2 + 20))
     if 1400 < current_time - score_time < 2100:
-        number_one = game_font.render(' 1',False,light_grey)
+        number_one = game_font.render('1',False,light_grey)
         screen.blit(number_one,(screen_width/2 - 10, screen_height/2 + 20))
     
     if current_time - score_time < 2100:
@@ -110,7 +110,7 @@ opponent_speed = 7
 # Text Variavles
 player_score = 0
 opponent_score = 0
-game_font = pygame.font.Font("font/Pixeltype.ttf",40)
+game_font = pygame.font.Font("font/Pixeltype.ttf",55)
 
 #Sound
 pong_sound = pygame.mixer.Sound('sounds/collison.wav')
@@ -155,7 +155,7 @@ while True:
     screen.blit(player_text,(660,470))
 
     opponent_text = game_font.render(f'{opponent_score}',False,light_grey)
-    screen.blit(opponent_text,(610,470))
+    screen.blit(opponent_text,(605,470))
 
 
     # Updating the window
